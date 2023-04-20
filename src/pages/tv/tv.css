@@ -1,0 +1,96 @@
+.posterImage{
+  height: 600px;
+}
+
+.posterImage > img {
+  margin: auto;
+  display: block;
+  width: 100%;
+}
+
+.posterImage__overlay_tv {
+  position: absolute;
+  padding: 5rem;
+  bottom: 0px;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-image: linear-gradient(rgb(0,0,0,0), rgb(0,0,0,1));
+  opacity: 1;
+  transition: opacity .3s;
+}   
+
+.posterImage__overlay_tv:hover {
+  opacity: 1;
+}
+
+.posterImage__title_tv {
+  font-weight: 900;
+  font-size: 4rem;
+  margin-bottom: 0.4rem;
+  text-align: left;
+}
+
+.posterImage__runtime_tv {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.posterImage__rating_tv {
+  margin-left: 3rem;
+}
+
+.posterImage__description_tv {
+  font-style: italic;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+  display: flex;
+  text-align: left;
+  width: 50%;
+}
+
+
+/* Movie List */
+.movie__list {
+  padding: 0 3rem 3rem 3rem;
+}
+
+.list__title {
+font-size: 1.75rem;
+margin:  2.5rem;
+}
+
+.list__cards {
+  display: flex;
+  flex-wrap: wrap ;
+  justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+  .swiper-container {
+    width: 768px;
+  }
+  .posterImage__overlay_tv {
+  }
+  .posterImage__title_tv {
+    font-size: 2rem;
+  }
+  .posterImage__rating_tv {
+    font-size: 0,5rem;
+  }
+  .posterImage__runtime_tv {
+    font-size: 0.5rem;
+  }
+  .posterImage__description_tv {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .swiper-container {
+    width: 640px;
+  }
+}
